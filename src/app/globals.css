@@ -6,3 +6,23 @@
     padding: 0;
     margin: 0;
 }
+
+/* h1{
+   
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+} */
+body {
+    overflow: hidden; 
+    background-color: rgba(245, 238, 238, 0.992);
+  }
+
+  .home__image{
+    width: 100%;
+    z-index: -1;
+    margin-bottom: -300px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0,0, 1), rgba(0, 0, 0, 0));
+}
+

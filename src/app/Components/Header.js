@@ -26,7 +26,7 @@ function Header() {
        <div onClick={showSlider} className='hover:bg-slate-800'>
        <MenuIcon className='' sx={{ color: 'white' }} fontSize="large"/>
        </div>
-        <h1 className='text-white font-bold text-lg  sm:flex hidden'>ShoppingCart</h1>
+        <h1 className='text-yellow-500  ml-2  font-bold text-xl  sm:flex hidden'>ShopPing</h1>
         <div className='flex items-center p-1 text-white ml-4 w-full  sm:visible invisible'>
           <input className='p-1 rounded-sm w-full' type="text"/>
           <SearchIcon fontSize='large'/>
