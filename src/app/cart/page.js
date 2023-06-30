@@ -3,7 +3,7 @@ import React from 'react'
 import { useStateValue } from '../Context/StateProvider';
 import CartProduct from '../Components/CartProduct';
 
-function cart() {
+function page() {
   const {product,dispatch} = useStateValue();
   const Array = product.cart;
   // console.log("array",Array)
@@ -27,4 +27,4 @@ function cart() {
   )
 }
 
-export default cart
+export default page
