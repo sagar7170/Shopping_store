@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from './Components/Sidebar'
 import ImageSlider from './Components/ImageSlider'
-import Product from './Components/Product'
+import Products from './Components/Products'
 
 
 function page() {
@@ -9,9 +9,9 @@ function page() {
     <>
       <div className='flex'>
         <Sidebar />
-        <div>
+        <div className='' >
           <ImageSlider />
-          <Product />
+          <Products />
         </div>
       </div>
     </>

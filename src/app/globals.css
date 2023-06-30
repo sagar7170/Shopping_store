@@ -15,7 +15,7 @@
     text-overflow: ellipsis;
 } */
 body {
-    overflow: hidden; 
+    /* overflow: hidden; */
     background-color: rgba(245, 238, 238, 0.992);
   }
 
