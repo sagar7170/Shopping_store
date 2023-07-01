@@ -21,7 +21,7 @@ function Product({ image, title, price, rating, description ,id,category}) {
 
   return (
     <div className='w-full flex justify-center h-full relative'>
-      <div className='w-96  p-5  flex justify-between flex-col bg-white relative top-2 '> 
+      <div className='w-[22rem]  p-5  flex justify-between flex-col bg-white relative top-2 '> 
          <h1 className='text-end text-gray-500'>{category}</h1>
          <img className='w-60 h-60 m-auto object-contain' src={image} alt="" />
         <div>
