@@ -27,6 +27,10 @@ const reducer = (state, action) => {
                 }
                 return {...state, cart: state.cart}
             }
+        case 'PRODUCT_DETAIL':
+            {
+                return {...state,productdetail: action.payload}
+            }    
     }
 }
 

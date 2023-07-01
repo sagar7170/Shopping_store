@@ -7,7 +7,8 @@ export const StateContext = createContext();
 export const StateProvider = ({children}) => {
   const [product,dispatch]=useReducer(reducer, {
     products:[],
-    cart:[]
+    cart:[],
+    productdetail:{}
  })
  
  const [productState,dispatchstate]=useReducer(reducer,{

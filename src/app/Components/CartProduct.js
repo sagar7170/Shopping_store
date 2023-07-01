@@ -25,7 +25,7 @@ function CartProduct({ image, title, price, rating, description,id }) {
           <Rating name="half-rating-read" defaultValue={rating} precision={0.5} readOnly />
           <h1 className='font-bold'>$ {price}</h1>
           <button  onClick={remove} className='bg-yellow-400 mt-1 hover:bg-yellow-200 w-full h-8 rounded-lg font-semibold '>Remove</button>
-          <Toaster />
+          <Toaster/>
         </div>
     </div>
   )
