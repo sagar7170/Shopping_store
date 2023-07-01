@@ -8,7 +8,7 @@ function page() {
   return (
     <>
       <div className='flex'>
-        <Sidebar />
+        
         <div className='' >
           <ImageSlider />
           <Products />

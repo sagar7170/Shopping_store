@@ -11,7 +11,7 @@ function Products() {
   return (
     <div className=' grid grid-cols-2 sm:flex sm:flex-wrap sm:w-full justify-center'>
       {Array?.map(item=>(
-       <div key={item.id} className='mr-2 mb-2' >
+       <div key={item.id} className='sm:mr-5 mb-2' >
          <Product image={item.image} title={item.title} price={item.price} rating={item.rating.rate} description={item.description} id={item.id}/>
        </div>
       ))}

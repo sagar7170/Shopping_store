@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
       <body>
        <StateProvider  >
         <Header />
+        <Sidebar />
         {children}
         </StateProvider>
       </body>
