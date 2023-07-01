@@ -5,7 +5,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 function CartProduct({ image, title, price, rating, description,id }) {
     const {product,dispatch} = useStateValue()
-    console.log("cartproduct",product.cart)
+    // console.log("cartproduct",product.cart)
     const remove=()=>{
       toast.success('Removed from Cart');
         dispatch({
@@ -13,10 +13,10 @@ function CartProduct({ image, title, price, rating, description,id }) {
           payload:id
         })
     }
-    
+
   return (
    <div className='flex sm:flex-row flex-col w-full  relative bg-white p-5 top-5  shadow-2xl'>
-        <div  className=' w-60  p-5 '>
+        <div  className=' w-52  p-5 '>
           <img src={image} alt="" />
         </div>
        <div className=' w-80 '>

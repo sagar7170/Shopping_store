@@ -9,11 +9,11 @@ function Cart() {
   const Array = product.cart;
   const array1 = [1, 2, 3, 4];
 
-const subtotal = Array.reduce(
-  (accumulator, currentValue) => accumulator + currentValue.price,0
-);
+  const subtotal = Array.reduce(
+    (accumulator, currentValue) => accumulator + currentValue.price, 0
+  );
 
-console.log(subtotal);
+  console.log(subtotal);
   return (
     (Array?.length === 0) ?
       <div>
@@ -28,10 +28,10 @@ console.log(subtotal);
       <div>
         <h1 className='text-center text-3xl font-bold text-gray-600'>Shopping Cart</h1>
         <div className='bg-white h-28 p-5 relative top-2 shadow-xl'>
-          <div className='flex'>  
-          <h1 className='text-xl font-bold flex'> subtotal:</h1>
-          <h1 className='text-xl ml-3 mr-3 font-thin'>items({Array?.length})</h1>
-          <h1 className='text-xl font-bold flex'> $ {subtotal}</h1>
+          <div className='flex'>
+            <h1 className='text-xl font-bold flex'> subtotal:</h1>
+            <h1 className='text-xl ml-3 mr-3 font-thin'>items({Array?.length})</h1>
+            <h1 className='text-xl font-bold flex'> $ {subtotal}</h1>
           </div>
           <button className='bg-yellow-400 mt-1 hover:bg-yellow-200 w-44 h-8 rounded-lg font-semibold '>Procced to Buy</button>
         </div>

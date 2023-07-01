@@ -4,7 +4,7 @@ import React from 'react'
 import { useStateValue } from '../Context/StateProvider'
 import toast, { Toaster } from 'react-hot-toast';
 
-function Product({ image, title, price, rating, description ,id}) {
+function Product({ image, title, price, rating, description ,id,category}) {
   
   const {product,dispatch} = useStateValue();
   const Array= product.cart;
@@ -18,10 +18,12 @@ function Product({ image, title, price, rating, description ,id}) {
       }
     })
   }
+
   return (
     <div className='w-full flex justify-center h-full relative'>
-      <div className='w-44 p-3 sm:w-64 sm:p-5 flex justify-between flex-col bg-white relative top-2  '> 
-         <img className='w-60 h-60 object-contain ' src={image} alt="" />
+      <div className='w-96  p-5  flex justify-between flex-col bg-white relative top-2 '> 
+         <h1 className='text-end text-gray-500'>{category}</h1>
+         <img className='w-60 h-60 m-auto object-contain' src={image} alt="" />
         <div>
           <h1 className='font-bold  whitespace-nowrap overflow-hidden text-ellipsis' >{title}</h1>
           <h1 className='line-clamp-2'>{description}</h1>
@@ -35,7 +37,7 @@ function Product({ image, title, price, rating, description ,id}) {
     </div>
   )
 }
-
+// sm:w-64 sm:p-5
 
 
 export default Product

@@ -9,10 +9,10 @@ function Products() {
     // console.log("allproducts",Array);
     const array =[1,2,34,5]
   return (
-    <div className=' grid grid-cols-2 sm:flex sm:flex-wrap sm:w-full justify-center'>
+    <div className=' sm:flex sm:flex-wrap sm:w-full justify-center'>
       {Array?.map(item=>(
-       <div key={item.id} className='sm:mr-5 mb-2' >
-         <Product image={item.image} title={item.title} price={item.price} rating={item.rating.rate} description={item.description} id={item.id}/>
+       <div key={item.id} className=' sm:mr-4 mb-2' >
+         <Product image={item.image} title={item.title} price={item.price} rating={item.rating.rate} description={item.description} id={item.id} category={item.category}/>
        </div>
       ))}
     </div>
