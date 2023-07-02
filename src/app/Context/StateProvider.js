@@ -8,11 +8,13 @@ export const StateProvider = ({children}) => {
   const [product,dispatch]=useReducer(reducer, {
     products:[],
     cart:[],
-    productdetail:{}
+    productdetail:{},
+    btn:false
  })
  
  const [productState,dispatchstate]=useReducer(reducer,{
-    slider:false
+    slider:false,
+   
  })
   useEffect(() => {
       const apiData = async ()=>{

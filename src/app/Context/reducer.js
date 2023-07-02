@@ -30,7 +30,7 @@ const reducer = (state, action) => {
         case 'PRODUCT_DETAIL':
             {
                 return {...state,productdetail: action.payload}
-            }    
+            } 
     }
 }
 
