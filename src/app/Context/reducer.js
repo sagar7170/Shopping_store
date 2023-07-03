@@ -31,6 +31,14 @@ const reducer = (state, action) => {
             {
                 return {...state,productdetail: action.payload}
             } 
+        case 'FILTER_CATEGORY':
+            {
+                return {...state,filter: action.payload}
+            }
+        case 'CLEAR_FILTER':
+            {
+                return {...state,filter:""}
+            }       
     }
 }
 

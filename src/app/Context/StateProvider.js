@@ -9,12 +9,15 @@ export const StateProvider = ({children}) => {
     products:[],
     cart:[],
     productdetail:{},
-    btn:false
  })
  
  const [productState,dispatchstate]=useReducer(reducer,{
     slider:false,
-   
+    filter:''
+    // men:false,
+    // women:false,
+    // electronic:false,
+    // jewelery:false
  })
   useEffect(() => {
       const apiData = async ()=>{

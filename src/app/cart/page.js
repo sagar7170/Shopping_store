@@ -33,7 +33,7 @@ function Cart() {
             <h1 className='text-xl ml-3 mr-3 font-thin'>items({Array?.length})</h1>
             <h1 className='text-xl font-bold flex'> $ {subtotal}</h1>
           </div>
-          <button className='bg-yellow-400 mt-1 hover:bg-yellow-200 w-44 h-8 rounded-lg font-semibold '>Procced to Buy</button>
+          <button className='bg-yellow-400 mt-3 hover:bg-yellow-200 w-44 h-8 rounded-lg font-semibold '>Procced to Buy</button>
         </div>
         <div >
           {

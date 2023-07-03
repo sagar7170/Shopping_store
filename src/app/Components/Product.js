@@ -7,10 +7,15 @@ import Link from 'next/link';
 
 function Product({ image, title, price, rating, description ,id,category}) {
   
-  const {product,dispatch} = useStateValue();
-  const [index,setIndex]=useState(-1);
+  const {product,dispatch,productState} = useStateValue();
   const Array= product.cart;
-  // console.log(index)
+  
+  // const array = ()=>{
+  //   if(productState.filter=="men's clothing"){
+  //     console.log( Array?.filter(item=>item.category==="men's clothing"))
+  //   }
+  // }
+  //  array()
   const productdetail = ()=> {
     dispatch({
       type: 'PRODUCT_DETAIL',
@@ -30,7 +35,7 @@ function Product({ image, title, price, rating, description ,id,category}) {
     })
   }
 
-  console.log("cartindex",product.cart.findIndex(i=>i.id===id))
+  // console.log("cartindex",product.cart.findIndex(i=>i.id===id))
   return (
     <div className='w-full flex justify-center h-full relative'>
       <div className='w-[22rem]  p-5  flex justify-between flex-col bg-white relative hover:shadow-2xl hover:shadow-black hover:scale-100 duration-500  top-2 '> 

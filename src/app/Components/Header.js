@@ -18,7 +18,6 @@ function Header() {
     
     dispatchstate({
       type: 'SHOW_SLIDER',
-      // payload: icon  
     })
   }
 

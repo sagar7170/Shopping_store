@@ -22,17 +22,16 @@ function Detail() {
     
     return (
         <div className='bg-white w-[90%] sm:flex gap-x-10 m-auto p-10 relative top-5 shadow-xl'>
-
-            <img className='w-64 hover:scale-110  duration-500 ease-in-out  object-contain' src={image} alt="" />
+            <img className='w-64 hover:scale-110  duration-500 ease-in-out  object-contain'src={image} alt="" />
             {/* <h1 className='text-end'>{category}</h1> */}
             <div className='flex flex-col  justify-between gap-y-5'>
-
                 <div>
                     <h1 className='text-xl font-semibold'>{title}</h1>
-                    <div className='flex mt-2'>
-                        <h1 className='font-semibold mr-1'>{rating}</h1>
-                        <Rating className='mb-4' name="half-rating-read" defaultValue={rating} precision={0.5} readOnly />
+                    <div className='flex mt-2 items-center mb-4'>
+                        <h1 className='font-semibold text-white mr-1 bg-green-600 h-6  pl-1 w-8 rounded-md '>{rating}</h1>
+                        <Rating className='' name="half-rating-read" defaultValue={rating} precision={0.5} readOnly />
                     </div>
+
                     <h1 className='text-3xl font-semibold'>${price}</h1>
                     <div className='' >
                         <h1>Description:</h1>

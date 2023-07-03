@@ -7,7 +7,7 @@ import Products from './Components/Products'
 function page() {
   return (
     <>
-      <div className='flex'>
+      <div className='flex '>
         
         <div className='' >
           <ImageSlider />
