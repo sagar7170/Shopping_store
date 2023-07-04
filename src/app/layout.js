@@ -1,6 +1,4 @@
-"use client"
 import Header from './Components/Header'
-import Sidebar from './Components/Sidebar'
 import { StateProvider } from './Context/StateProvider'
 import './globals.css'
 

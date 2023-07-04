@@ -21,7 +21,7 @@ function Detail() {
       }
     
     return (
-        <div className='bg-white w-[90%] sm:flex gap-x-10 m-auto p-10 relative top-5 shadow-xl'>
+        <div className='bg-white w-[90%] sm:flex gap-x-10 m-auto p-10 relative shadow-xl top-16'>
             <img className='w-64 hover:scale-110  duration-500 ease-in-out  object-contain'src={image} alt="" />
             {/* <h1 className='text-end'>{category}</h1> */}
             <div className='flex flex-col  justify-between gap-y-5'>
