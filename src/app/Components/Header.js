@@ -29,7 +29,7 @@ function Header() {
       payload:input
     })
   }
- console.log(input)
+
   return (
     <div className='bg-black fixed z-10 w-full '>
       <div id='nav' className='bg-black w-full h-14 flex items-center justify-between rounded-md '>
