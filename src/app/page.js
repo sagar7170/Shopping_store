@@ -8,7 +8,6 @@ function page() {
   return (
     <>
       <div className='flex '>
-        
         <div className='' >
           <ImageSlider />
           <Products />

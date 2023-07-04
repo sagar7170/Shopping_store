@@ -10,12 +10,6 @@ function Product({ image, title, price, rating, description ,id,category}) {
   const {product,dispatch,productState} = useStateValue();
   const Array= product.cart;
   
-  // const array = ()=>{
-  //   if(productState.filter=="men's clothing"){
-  //     console.log( Array?.filter(item=>item.category==="men's clothing"))
-  //   }
-  // }
-  //  array()
   const productdetail = ()=> {
     dispatch({
       type: 'PRODUCT_DETAIL',

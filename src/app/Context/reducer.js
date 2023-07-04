@@ -38,7 +38,11 @@ const reducer = (state, action) => {
         case 'CLEAR_FILTER':
             {
                 return {...state,filter:""}
-            }       
+            }  
+        case 'SEARCH_ITEMS':
+            {
+                return {...state,srchquery:action.payload}
+            }         
     }
 }
 

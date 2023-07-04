@@ -1,4 +1,4 @@
-
+"use client"
 import Header from './Components/Header'
 import Sidebar from './Components/Sidebar'
 import { StateProvider } from './Context/StateProvider'
@@ -12,10 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body >
+      <body className=''>
        <StateProvider >
         <Header />
-        <Sidebar />
         {children}
         </StateProvider>
       </body>

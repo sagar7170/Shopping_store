@@ -1,10 +1,10 @@
 "use client"
 import React from 'react'
 import { useStateValue } from '../Context/StateProvider'
+import Avatar from '@mui/material/Avatar';
 function Sidebar() {
     
 const {productState, dispatchstate}= useStateValue()
-     console.log("filter",productState.filter)
     const filter = (e)=>{
        dispatchstate({
         type:'FILTER_CATEGORY',
@@ -26,6 +26,10 @@ const clearfilter = ()=>{
 return (
     <div className={productState.slider?'flex':'hidden z-30 '}>
     <div className='h-screen absolute w-64 sm:w-72 bg-black text-white z-30 '>
+      <div className='flex gap-x-3 items-center p-4' >
+       <Avatar fontSize = 'large' src='https://png.pngtree.com/png-clipart/20200224/original/pngtree-male-avatar-simple-cartoon-design-png-image_5230556.jpg'/>
+       <h1 className='font-bold'>Hello, Guest</h1>
+      </div>
        <div  className='flex flex-col  items-center'>
         <h3 className='text-xl font-bold mt-2'>Filter's</h3>
         <button onClick={filter} name="electronics" className='flex hover:bg-slate-600  rounded-md   w-60 p-2'>Electronic</button>

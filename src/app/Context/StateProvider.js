@@ -13,11 +13,8 @@ export const StateProvider = ({children}) => {
  
  const [productState,dispatchstate]=useReducer(reducer,{
     slider:false,
-    filter:''
-    // men:false,
-    // women:false,
-    // electronic:false,
-    // jewelery:false
+    filter:'',
+    srchquery:''
  })
   useEffect(() => {
       const apiData = async ()=>{
