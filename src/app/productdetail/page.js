@@ -48,5 +48,4 @@ function Detail() {
         </div>
     )
 }
-{/* <button onClick={Cart} className='bg-yellow-400   hover:bg-yellow-200 w-full h-12 rounded-sm font-semibold'>Add to Cart</button> */}
 export default Detail

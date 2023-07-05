@@ -12,7 +12,7 @@ import Sidebar from './Sidebar';
 function Header() {
 
   const { productState, dispatchstate,product,dispatch } = useStateValue()
-   const [input,setInput] = useState('')
+   const [input,setInput] = useState(null)
   const Array= product.cart;
  const cartlength = Array?.length;
   
@@ -29,7 +29,7 @@ function Header() {
       payload:input
     })
   }
-
+// console.log("textinput",input)
   return (
     <div className='bg-black fixed z-10 w-full '>
       <div id='nav' className='bg-black w-full h-14 flex items-center justify-between rounded-md '>
@@ -38,8 +38,8 @@ function Header() {
         </div>
         <Link href='/'><h1 className=' logo  ml-2 font-bold text-2xl '>ShopPing</h1></Link>
         <div className='flex items-center p-1 text-white ml-4 w-full  sm:visible invisible'>
-          <input className='p-1 rounded-sm w-full' type="text" />
-          <SearchIcon fontSize='large' />
+          <input onChange={handleinput}  className='p-1 rounded-sm w-full text-black ' type="text" />
+          <SearchIcon fontSize='large' sx={{ color: 'white' }} />
         </div>
         <Link href="/cart">
         <div className=''>
